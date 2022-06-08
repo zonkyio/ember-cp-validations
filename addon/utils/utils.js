@@ -1,15 +1,15 @@
 import ArrayProxy from '@ember/array/proxy';
 import ObjectProxy from '@ember/object/proxy';
 import { assign } from '@ember/polyfills';
-import { isHTMLSafe } from '@ember/string';
+import { isHTMLSafe } from '@ember/template';
 import EmberObject, { get } from '@ember/object';
 import { typeOf } from '@ember/utils';
 import { A as emberArray, isArray } from '@ember/array';
 
 import Ember from 'ember';
-import requireModule from 'ember-require-module';
+import require from 'require';
 
-const DS = requireModule('ember-data');
+const DS = require.has('ember-data') ? require('ember-data').default : null;
 
 const { canInvoke } = Ember;
 

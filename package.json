@@ -11,7 +11,11 @@
     "test:all": "ember try:each"
   },
   "engines": {
-    "node": "10.* || >= 12"
+    "node": "14.* || 16.* || >= 18"
+  },
+  "volta": {
+    "node": "16.15.1",
+    "yarn": "1.22.11"
   },
   "contributors": [
     {
@@ -97,9 +101,8 @@
     "test": "tests"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.1.2",
-    "ember-require-module": "^0.3.0",
-    "ember-validators": "^3.0.1"
+    "ember-cli-babel": "^7.26.11",
+    "ember-validators": "^4.1.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
